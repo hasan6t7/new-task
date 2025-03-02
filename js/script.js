@@ -16,7 +16,7 @@ for (let i = 0; i < completes.length; i++) {
   complete.addEventListener("click", function (event) {
     event.preventDefault();
 
-    alert("Ok Done ");
+    alert("Board Updated Successfully");
     let assaignleft = document.getElementById("assaign-left");
     let convertedAssaignLeft = parseInt(assaignleft.innerText);
     let newAssaignLeft = convertedAssaignLeft - 1;
@@ -27,7 +27,7 @@ for (let i = 0; i < completes.length; i++) {
     assaignDone.innerText = newAssaignDone;
 
     if (newAssaignLeft === 0) {
-      alert("congratulation");
+      alert("congrates!!! You have completed all the current task");
     }
 
     let title = event.target.parentNode.parentNode.children[1].innerText;
